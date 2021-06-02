@@ -4,4 +4,5 @@ module de.itemis.mosig.flademo {
      * foreign incubator holds code to access 'foreign' (i. e. non Java) code and memory.
      */
     requires jdk.incubator.foreign;
+    requires com.google.common;
 }

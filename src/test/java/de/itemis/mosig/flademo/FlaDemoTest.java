@@ -12,6 +12,12 @@ public class FlaDemoTest {
     private static final int EXPECTED_LENGTH = TEST_STRING.length();
 
     @Test
+    public void testSomething() {
+        System.out.println(System.getProperty("java.library.path"));
+        FlaDemo.assuan_new();
+    }
+
+    @Test
     public void returns_length_of_string() {
         assertThat(strlen(TEST_STRING)).isEqualTo(EXPECTED_LENGTH);
     }
