@@ -18,6 +18,11 @@ public class FlaDemoTest {
     }
 
     @Test
+    public void testSomethingOther() {
+        FlaDemo.sCardListReaders();
+    }
+
+    @Test
     public void returns_length_of_string() {
         assertThat(strlen(TEST_STRING)).isEqualTo(EXPECTED_LENGTH);
     }
